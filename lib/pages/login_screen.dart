@@ -41,20 +41,22 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Form(
           key: _formKey,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextFormField(
+                  onTapOutside: (event) => FocusScope.of(context).unfocus(),
                   controller: _emailCtr,
                   decoration: kTextFieldDecoration,
                   validator: (val) {
                     if (val!.isEmpty) {
                       return 'please enter email';
                     }
+                    return null;
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 ),
                 TextFormField(
@@ -64,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     label: const Text('Password'),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 45,
                 ),
                 ElevatedButton(
