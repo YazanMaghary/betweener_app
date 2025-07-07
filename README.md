@@ -63,7 +63,7 @@ cd betweener</code></pre>
       <td><img src="./screenshots/Register Screen.png" width="150" /></td>
       <td><img src="./screenshots/Profile (1).png" width="150" /></td>
       <td><img src="./screenshots/recieve- Active Sharing.png" width="150" /></td>
-      <td><img src="./screenshots/Home Screen" width="150" /></td>
+      <td><img src="./screenshots/Home Screen.png" width="150" /></td>
     </tr>
   </tbody>
 </table>
